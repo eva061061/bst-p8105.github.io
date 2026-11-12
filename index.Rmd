@@ -50,3 +50,11 @@ _site.yml掌管所有但是还是要在各个Rmd的knit显现的,knit之后所�
 
 
 注意yml文档对格式非常的敏感，如果你哪个文档knit不出来，很有可能你是yml格式出问题了，空格是不是确实，theme行是不是没缩进等
+
+
+
+！！！你build web 之后要commit的话千万注意不要选中那个site_libs那个应该就是大量的缓存什么的，不选commit他！会电脑卡机死掉
+
+咦？但是教授又commit他了： these are all my website staff
+
+commit之后你github才能接收到！！才能给你生成开放给所有人的网页呀！！
