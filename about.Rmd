@@ -1,0 +1,20 @@
+---
+title: "About"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+   
+---
+
+# About this page
+
+神奇！index是可以链接到另一个Rmd生成的html的，链接名字就是about.html
+
+前提是你得先knit这个about Rmd, 不然你跳转不到这个about对应的html
+
+笑死，这里生成的网站其实也可以跳转回index:
+
+To go home, pls click [home](index.html)
+
+

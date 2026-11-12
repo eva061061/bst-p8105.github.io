@@ -1,0 +1,52 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+   
+---
+
+# This is Jeff's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+I learn DS from [p8105](https://p8105.com/schedule.html)!
+
+神奇！！中括号后面接括号，那么中括号里的东西自动变成超链接！！
+
+注意创建网站的时候在github中创建的repo名字必须是name.github.io,并且复制repo链接到Rstudio中，你写的directory的名字也必须是一样的name.github.io， 这样你后面把这个名字直接复制到浏览器才能直接生成网站
+
+
+To learn how easy to make web, pls check [here](about.html)    注意不管是你的About.Rmd还是ABout.Rmd,链接里面永远都得是小写about.html
+
+## something that really  cool
+
+How to insert picture into web:
+
+<img src="images/myself.jpg" style="width:75%">  
+
+只要尖括号里写src="图片的相对路径.jpj, style ="width:75%"
+
+
+another cool thing is my plot: check [out](plots.html)
+
+
+
+
+_site.yml相当于掌管世界的神，所以你 theme: cerulean可以不在每个Rmd的title部分设置，而是统一在yml中output:
+  html_document:
+    theme: cerulean
+    
+_site.yml中的navbar是控制导航栏的，生成的网页的web的右边都有什么东西
+
+
+_site.yml掌管所有但是还是要在各个Rmd的knit显现的,knit之后所有html都会有顶部的导航栏了；注意尽管你的Rmd们因为没有内部代码变动所以没有需要保存的星号标，但是你必须knit之后才能getyml带来的新元素
+
+或者！你要是不想一个一个knit来兼容新变化的话你可以↓
+
+
+我靠！关掉这个Rssstudio之后再点击文档里蓝色R 再打开，这样可以使得Rstudio意识到这是一个网页的创建的directory，从而你右上角才能有Buid-Build Website， 你只要点击build Website就可以相当于一键knit所以文档了
+
+
+注意yml文档对格式非常的敏感，如果你哪个文档knit不出来，很有可能你是yml格式出问题了，空格是不是确实，theme行是不是没缩进等

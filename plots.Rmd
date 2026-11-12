@@ -1,0 +1,33 @@
+---
+title: "About"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    
+---
+
+# There are some cool plots
+
+
+scatterplot:
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+plot_df= 
+  tibble(
+    x=rnorm(100,2,3),
+    y= x+ rnorm(100)
+  )
+
+plot_df |>
+  ggplot(aes(x=x,y=y))+
+  geom_point()
+```
+
+
+
+
